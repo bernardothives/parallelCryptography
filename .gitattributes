@@ -1,0 +1,3 @@
+# Set the default behavior for all text files to be normalized to LF
+# in the repository, which is the cross-platform standard.
+* text=auto eol=lf
