@@ -1,0 +1,23 @@
+# Arquivos compilados e binários do Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.a
+
+# Pasta de saída da aplicação
+# Ignora tudo dentro da pasta /assets/saida/
+/assets/saida/*
+
+# Para manter a pasta /assets/saida/ no repositório (mas vazia),
+# descomente a linha abaixo e crie um arquivo vazio chamado .gitkeep dentro dela.
+# !/assets/saida/.gitkeep
+
+# Arquivos de configuração de editores e IDEs
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
