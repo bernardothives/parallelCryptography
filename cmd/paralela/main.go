@@ -76,7 +76,7 @@ func main() {
 
 	// 3. Inicializar mecanismos de sincronização
 	var wg sync.WaitGroup
-	
+
 	// Canal com buffer para controlar o número de goroutines simultâneas
 	semaphore := make(chan struct{}, numGoroutines)
 
@@ -86,7 +86,7 @@ func main() {
 	// Dispara goroutines para processar arquivos em paralelo
 	for i, nomeArquivo := range listaDeArquivos {
 		wg.Add(1)
-		
+
 		// Adquire um slot no semáforo (limita goroutines simultâneas)
 		semaphore <- struct{}{}
 
@@ -118,10 +118,10 @@ func main() {
 	fmt.Println("==========================================")
 	fmt.Println("   RESULTADO")
 	fmt.Println("==========================================")
-	fmt.Println("✓ Processamento paralelo concluído!")
-	fmt.Printf("⏱  Tempo total de execução: %v\n", duracaoTotal)
-	fmt.Printf("📊 Tempo médio por arquivo: %v\n", duracaoTotal/time.Duration(len(listaDeArquivos)))
-	fmt.Printf("📁 Arquivos processados: %d\n", len(listaDeArquivos))
-	fmt.Printf("🔧 Goroutines utilizadas: %d\n", numGoroutines)
+	fmt.Println("Processamento paralelo concluído!")
+	fmt.Printf("Tempo total de execução: %v\n", duracaoTotal)
+	fmt.Printf("Tempo médio por arquivo: %v\n", duracaoTotal/time.Duration(len(listaDeArquivos)))
+	fmt.Printf("Arquivos processados: %d\n", len(listaDeArquivos))
+	fmt.Printf("Goroutines utilizadas: %d\n", numGoroutines)
 	fmt.Println("==========================================")
 }

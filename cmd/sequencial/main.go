@@ -83,9 +83,9 @@ func main() {
 	fmt.Println("==========================================")
 	fmt.Println("   RESULTADO")
 	fmt.Println("==========================================")
-	fmt.Println("✓ Processamento sequencial concluído!")
-	fmt.Printf("⏱  Tempo total de execução: %v\n", duracaoTotal)
-	fmt.Printf("📊 Tempo médio por arquivo: %v\n", duracaoTotal/time.Duration(len(listaDeArquivos)))
-	fmt.Printf("📁 Arquivos processados: %d\n", len(listaDeArquivos))
+	fmt.Println("Processamento sequencial concluído!")
+	fmt.Printf("Tempo total de execução: %v\n", duracaoTotal)
+	fmt.Printf("Tempo médio por arquivo: %v\n", duracaoTotal/time.Duration(len(listaDeArquivos)))
+	fmt.Printf("Arquivos processados: %d\n", len(listaDeArquivos))
 	fmt.Println("==========================================")
 }
