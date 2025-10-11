@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func CriptografarArquivo(caminhoEntrada, caminhoSaida string, chave []byte) erro {
+func CriptografarArquivo(caminhoEntrada, caminhoSaida string, chave []byte) error {
 	bytesArquivoOriginal, err := os.ReadFile(caminhoEntrada)
 	if err != nil {
 		return err
