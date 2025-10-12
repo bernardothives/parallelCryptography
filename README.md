@@ -75,5 +75,3 @@ go run ./cmd/biblioteca ./assets/entrada ./assets/saida 4
 ## Padrões implementados:
 - ✅ Producer-Consumer Pattern
 - ✅ Worker Pool Pattern
-- ✅ Channel-based Communication
-- ✅ Graceful Shutdown
